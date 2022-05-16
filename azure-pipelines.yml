@@ -67,7 +67,7 @@ stages:
 
 - stage: 'Staging'
   displayName: 'Deploy to the staging environment'
-  dependsOn: Test
+  dependsOn: Build
   jobs:
   - deployment: Deploy
     pool:
